@@ -1,0 +1,150 @@
+from anytree.exporter import DotExporter
+from tech_keyword import Keyword
+
+# Source:
+#       CRITICAL AND EMERGING TECHNOLOGIES LIST UPDATE
+#       A Report by the FAST TRACK ACTION SUBCOMMITTEE ON CRITICAL AND EMERGING TECHNOLOGIES
+#       of the NATIONAL SCIENCE AND TECHNOLOGY COUNCIL
+tech_root = Keyword('Critical Technologies', children=[
+    Keyword('Advanced Computing', children=[
+        Keyword('Supercomputing', children=[]),
+        Keyword('Edge computing', children=[]),
+        Keyword('Cloud computing', children=[]),
+        Keyword('Data storage', children=[]),
+        Keyword('Computing architectures', children=[]),
+        Keyword('Data processing and analysis techniques', children=[]),
+    ]),
+    Keyword('Advanced Engineering Materials', children=[
+        Keyword('Materials by design and material genomics', children=[]),
+        Keyword('Materials with new properties', children=[]),
+        Keyword('Materials with substantial improvements to existing properties', children=[]),
+        Keyword('Material property characterization and lifecycle assessment ', children=[]),
+    ]),
+    Keyword('Advanced Gas Turbine Engine Technologies', children=[
+        Keyword('Aerospace, maritime, and industrial development and production technologies', children=[]),
+        Keyword('Full-authority digital engine control, hot-section manufacturing, and associated technologies', children=[]),
+    ]),
+    Keyword('Advanced Manufacturing', children=[
+        Keyword('Additive manufacturing', children=[]),
+        Keyword('Clean, sustainable manufacturing', children=[]),
+        Keyword('Smart manufacturing', children=[]),
+        Keyword('Nanomanufacturing', children=[]),
+    ]),
+    Keyword('Advanced and Networked Sensing and Signature Management', children=[
+        Keyword('Payloads, sensors, and instruments', children=[]),
+        Keyword('Sensor processing and data fusion', children=[]),
+        Keyword('Adaptive optics', children=[]),
+        Keyword('Remote sensing of the Earth', children=[]),
+        Keyword('Signature management', children=[]),
+        Keyword('Nuclear materials detection and characterization', children=[]),
+        Keyword('Chemical weapons detection and characterization', children=[]),
+        Keyword('Biological weapons detection and characterization', children=[]),
+        Keyword('Emerging pathogens detection and characterization', children=[]),
+        Keyword('Transportation-sector sensing', children=[]),
+        Keyword('Security-sector sensing', children=[]),
+        Keyword('Health-sector sensing', children=[]),
+        Keyword('Energy-sector sensing', children=[]),
+        Keyword('Building-sector sensing', children=[]),
+        Keyword('Environmental-sector sensing', children=[]),
+    ]),
+    Keyword('Advanced Nuclear Energy Technologies ', children=[
+        Keyword('Nuclear energy systems ', children=[]),
+        Keyword('Fusion energy', children=[]),
+        Keyword('Space nuclear power and propulsion systems', children=[]),
+    ]),
+    Keyword('Artificial Intelligence (AI)', children=[
+        Keyword('Machine learning', children=[]),
+        Keyword('Deep learning', children=[]),
+        Keyword('Reinforcement learning', children=[]),
+        Keyword('Sensory perception and recognition', children=[]),
+        Keyword('Next-generation AI', children=[]),
+        Keyword('Planning, reasoning, and decision making', children=[]),
+        Keyword('Safe and/or secure AI', children=[]),
+    ]),
+    Keyword('Autonomous Systems and Robotics', children=[
+        Keyword('Surfaces', children=[]),
+        Keyword('Air', children=[]),
+        Keyword('Maritime', children=[]),
+        Keyword('Space', children=[]),
+    ]),
+    Keyword('Biotechnologies', children=[
+        Keyword('Nucleic acid and protein synthesis', children=[]),
+        Keyword('Genome and protein engineering including design tools', children=[]),
+        Keyword('Multi-omics and other biometrology, bioinformatics, predictive modeling, and analytical tools for functional phenotypes', children=[]),
+        Keyword('Engineering of multicellular systems', children=[]),
+        Keyword('Engineering of viral and viral delivery systems', children=[]),
+        Keyword('Biomanufacturing and bioprocessing technologies', children=[]),
+    ]),
+    Keyword('Communication and Networking Technologies', children=[
+        Keyword('Radio-frequency (RF) and mixed-signal circuits, antennas, filters, and components', children=[]),
+        Keyword('Spectrum management technologies', children=[]),
+        Keyword('Next-generation wireless networks, including 5G and 6G', children=[]),
+        Keyword('Optical links and fiber technologies', children=[]),
+        Keyword('Terrestrial/undersea cables', children=[]),
+        Keyword('Satellite-based communications', children=[]),
+        Keyword('Hardware, firmware, and software', children=[]),
+        Keyword('Communications and network security', children=[]),
+        Keyword('Mesh networks/infrastructure independent communication technologies', children=[]),
+    ]),
+    Keyword('Directed Energy', children=[
+        Keyword('Lasers', children=[]),
+        Keyword('High-power microwaves', children=[]),
+        Keyword('Particle beams', children=[]),
+    ]),
+    Keyword('Financial Technologies', children=[
+        Keyword('Distributed ledger technologies', children=[]),
+        Keyword('Digital assets', children=[]),
+        Keyword('Digital payment technologies', children=[]),
+        Keyword('Digital identity infrastructure', children=[]),
+    ]),
+    Keyword('Human-Machine Interfaces ', children=[
+        Keyword('Augmented reality', children=[]),
+        Keyword('Virtual reality', children=[]),
+        Keyword('Brain-computer interfaces', children=[]),
+        Keyword('Human-machine teaming', children=[]),
+    ]),
+    Keyword('Hypersonics', children=[
+        Keyword('Propulsion', children=[]),
+        Keyword('Aerodynamics and control', children=[]),
+        Keyword('Materials', children=[]),
+        Keyword('Detection, tracking, and characterization', children=[]),
+        Keyword('Defense', children=[]),
+    ]),
+    Keyword('Quantum Information Technologies', children=[
+        Keyword('Quantum computing', children=[]),
+        Keyword('Materials, isotopes, and fabrication techniques for quantum devices', children=[]),
+        Keyword('Post-quantum cryptography', children=[]),
+        Keyword('Quantum sensing', children=[]),
+        Keyword('Quantum networking', children=[]),
+    ]),
+    Keyword('Renewable Energy Generation and Storage', children=[
+        Keyword('Renewable generation', children=[]),
+        Keyword('Renewable and sustainable fuels', children=[]),
+        Keyword('Energy storage', children=[]),
+        Keyword('Electric and hybrid engines', children=[]),
+        Keyword('Batteries', children=[]),
+        Keyword('Grid integration technologies', children=[]),
+        Keyword('Energy-efficiency technologies', children=[]),
+    ]),
+    Keyword('Semiconductors and Microelectronics', children=[
+        Keyword('Design and electronic design automation tools', children=[]),
+        Keyword('Manufacturing process technologies and manufacturing equipment', children=[]),
+        Keyword('Beyond complementary metal-oxide-semiconductor (CMOS) technology', children=[]),
+        Keyword('Heterogeneous integration and advanced packaging', children=[]),
+        Keyword('Specialized/tailored   hardware   components   for   artificial   intelligence,   natural   and   hostile   radiation  environments,  RF  and  optical  components,  high-power  devices,  and  other  critical  applications', children=[]),
+        Keyword('Novel materials for advanced microelectronics', children=[]),
+        Keyword('Wide-bandgap and ultra-wide-bandgap technologies for power management, distribution, and transmission', children=[]),
+    ]),
+    Keyword('Space Technologies and Systems', children=[
+        Keyword('On-orbit servicing, assembly, and manufacturing', children=[]),
+        Keyword('Commoditized satellite buses', children=[]),
+        Keyword('Low-cost launch vehicles', children=[]),
+        Keyword('Sensors for local and wide-field imaging', children=[]),
+        Keyword('Space propulsion', children=[]),
+        Keyword('Resilient positioning, navigation, and timing (PNT)', children=[]),
+        Keyword('Cryogenic fluid management', children=[]),
+        Keyword('Entry, descent, and landing', children=[]),
+    ]),
+])
+
+DotExporter(tech_root).to_picture("crittech.png")
